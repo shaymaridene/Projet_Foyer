@@ -16,5 +16,9 @@ public class Chambre {
     private long numeroChambre;
     @Enumerated(EnumType.STRING)
     private TypeChambre typeChambre;
+    @ManyToOne
+    private Bloc bloc;
+    @OneToMany
+    private Set<Reservation> reservations;
 
 }

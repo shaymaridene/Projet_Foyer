@@ -2,7 +2,6 @@ package tn.esprit.tpfoyer.entities;
 import jakarta.persistence.*;
 import lombok.*;
 import java.util.Date;
-import java.io.Serializable;
 import java.util.Set;
 
 @Entity
@@ -19,4 +18,6 @@ public class Etudiant {
     private String ecole;
     @Temporal(TemporalType.DATE)
     private Date dateNaissance;
+    @ManyToMany(mappedBy = "etudiants")
+    private Set<Reservation> reservations;
 }

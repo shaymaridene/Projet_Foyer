@@ -16,4 +16,6 @@ public class Reservation {
     @Temporal(TemporalType.DATE)
     private Date anneeUniversitaire;
     private boolean estValide;
+    @ManyToMany
+    private Set<Etudiant> etudiants;
 }

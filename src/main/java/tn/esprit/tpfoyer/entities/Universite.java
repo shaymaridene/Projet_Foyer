@@ -15,4 +15,6 @@ public class Universite  implements Serializable {
     private long idUniversite;
     private String nameUniversite;
     private String addresse;
+    @OneToOne
+    private Foyer foyer;
 }
