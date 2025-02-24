@@ -13,6 +13,7 @@ import java.util.Set;
 @Setter
 public class Foyer {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idFoyer;
     private String nomFoyer;
     private long capaciteFoyer;
