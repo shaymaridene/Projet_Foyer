@@ -14,7 +14,7 @@ import java.util.List;
 public class FoyerServImp implements IFoyerServ {
 
     IFoyerRepository foyerRepository;
-    IChambreRepository chambreRepository;
+
     @Override
     public Foyer findById(long id) {
         return foyerRepository.findById(id).orElse(null);
