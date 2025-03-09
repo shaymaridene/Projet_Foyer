@@ -20,6 +20,12 @@ public class FoyerCont {
         return foyerServ.findById(id);
     }
 
+    @PostMapping("/ajouterFoyerAUniversite/{idUniversite}")
+    public Foyer ajouterFoyerEtAffecterAUniversite(@RequestBody Foyer foyer,
+                                                   @PathVariable long idUniversite) {
+        return foyerServ.ajouterFoyerEtAffecterAUniversite(foyer, idUniversite);
+    }
+
 
 
 }

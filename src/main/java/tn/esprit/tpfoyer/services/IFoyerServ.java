@@ -10,5 +10,7 @@ public interface IFoyerServ {
     public List<Foyer> findAll();
     public Foyer save(Foyer foyer);
     public void delete(Long id);
+    public Foyer ajouterFoyerEtAffecterAUniversite(Foyer foyer, long idUniversite);
+
 
 }
